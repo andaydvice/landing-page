@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: white;
+  color: #2563eb;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #f0f4ff;
+}
+
+.btn.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Footer */
+footer {
+  background: #f8fafc;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .hero {
+    padding: 4rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
